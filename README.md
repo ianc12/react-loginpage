@@ -1,3 +1,11 @@
+React Intro Project:
+Login page with User Database.
+
+Successful login takes to homepage with calendar like app. Can select days to create birthday event.
+Can set reminders on the event (email, text, etc)
+
+Add user page for editing user details (username, password, email addy, phone#, etc)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
