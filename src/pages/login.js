@@ -28,19 +28,18 @@ class Login extends React.Component
 
 
     handleSubmit(event) {
-        console.log("Submit pressed");
         this.setState({loginResultClass : 'none'});
         event.preventDefault();
-        BackendAPI.getLoginUserID(this.state.user, this.state.password).then((res) => {return res.json()}).then((res) => 
+        BackendAPI.getLoginUserID(this.state.user, this.state.password).then((res) => {return res.json()}).then((json) => 
         {
-            if (res.userID !== null) 
+            if (json.userid != null) 
             {
                 this.setState({loginResultClass: 'success', loginResultMessage: 'Sucess! logging in...'});
             }
             else 
             {
                 this.setState({loginResultClass: 'failure'});
-                if (res.username == null)
+                if (json.username == null)
                 {
                     this.setState({loginResultMessage: 'Unrecognized username'})
                 }
