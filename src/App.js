@@ -7,21 +7,29 @@ import Home from "./pages/home";
 import NewUser from "./pages/new_user";
 import Account from "./pages/user_info";
 import Surprise from "./pages/surprise";
+import { render } from "react-dom";
 
+import './App.css'
 
-function App() {
-  return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route exact path='/' exact element={<Home />} />
-        <Route path='/home' element={<Home/>} />
-        <Route path='/user_info' element={<Account/>} />
-        <Route path='/login' element={<Login/>} />
-        <Route path='/surprise' element={<Surprise/>} />
-      </Routes>
-    </Router>
-  );
+class App extends React.Component {
+  render()
+  {
+    return (
+      <div id="page">
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route exact path='/' exact element={<Home />} />
+            <Route path='/home' element={<Home/>} />
+            <Route path='/user_info' element={<Account/>} />
+            <Route path='/login' element={<Login/>} />
+            <Route path='/surprise' element={<Surprise/>} />
+          </Routes>
+        </Router>
+      </div>
+    );
+  }
+  
 }
 
 export default App;

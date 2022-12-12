@@ -1,0 +1,23 @@
+#login {
+    background-color: lightgreen;
+    border: 2px solid black;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 10%;
+
+}
+
+.success {
+    background-color: green;
+}
+.failure {
+    background-color: red;
+}
+.none{
+    visibility: hidden;
+}
+
+#loginbutton {
+    margin-left: 100px;
+    margin-right: 100px;
+}

@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const Nav = styled.nav
 `
-    background: LightCyan;
+    background: green;
     height: 10%;
     width: 100%;
     display: flex;
@@ -15,7 +15,7 @@ export const Nav = styled.nav
 
 export const NavLink = styled(Link)
 `
-    color: LightSkyBlue;
+    color: black;
     display: flex;
     align-items: center;
     text-decoration: none;
